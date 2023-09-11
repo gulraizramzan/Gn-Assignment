@@ -17,6 +17,7 @@
         display: flex;
         width: 1275px;
         background-color: white;
+        justify-items: center;
       }
       .top-right {
         background-color: rgb(68, 68, 68);
@@ -52,7 +53,6 @@
         line-height: 32px;
         font-family: "Outfit", sans-serif;
         font-weight: 300;
-        
       }
       .sepN {
         background: linear-gradient(
@@ -67,68 +67,68 @@
         -webkit-background-clip: text;
       }
       .sepL {
-        background: linear-gradient(
-          to right,
-          #000000,
-          #000000
-        );
+        background: linear-gradient(to right, #000000, #000000);
         background-clip: content-box;
         -webkit-text-fill-color: transparent;
         -webkit-background-clip: text;
       }
       .mid {
-       
-        width: 1200px; 
+        width: 1200px;
         height: 1150px;
-        margin-top: 180px;  
-        
-         /* border: 2px solid green; */
-        
+        margin-top: 180px;
+
+        /* border: 2px solid green; */
       }
-      .mid-top{
+      .mid-top {
         display: flex;
         align-items: center;
         justify-content: space-around;
         /* border: 2px solid black; */
-        
       }
       .mid-text {
         width: 350px;
         height: 280px;
         /* border: 2px solid black; */
       }
-      .main{
+      .main {
         background-color: #ffffff;
         /* border: 2px solid red; */
       }
-      .mid-bottom-left{
-     /* display: grid; */
-     row-gap: 25px;
-
+      .mid-bottom-left {
+        /* display: grid; */
+        row-gap: 25px;
       }
-      .grid{
+      .grid {
         display: flex;
         gap: 18px;
         margin-top: 20px;
         /* border: 1px solid green; */
         justify-content: center;
       }
-      .last{
+      .last {
         height: 313px;
         width: 445px;
         background-color: #151515;
         justify-content: center;
       }
-      .footers{
-        height: 84px; 
+      .footers {
+        display: flex;
         height: 244px;
         background-color: #444444;
         margin-top: 10%;
+        align-content: center;
       }
-      .footer-text{
-      display: flex;
-        align-items:center;
-       
+      footer {
+        display: flex;
+        /* justify-content: space-evenly; */
+        width: 1200px;
+        height: 244px;
+        background-color: #444444;
+        align-items: center;
+      }
+      .footer-text {
+        display: flex;
+        align-items: center;
       }
       .btn {
         width: 200px;
@@ -165,7 +165,7 @@
             from a spark of inspiration. Will these pieces inspire you? Visit us
             and find out.
           </p>
-          <div style="display: flex;">
+          <div style="display: flex">
             <button
               type="button"
               class="btn"
@@ -180,48 +180,81 @@
                 style="width: 50px; height: 50px; margin-top: 8px"
               />
             </div>
-        </div>
+          </div>
         </div>
       </div>
       <div class="mid">
         <div class="mid-top">
-        <p class="mid-text">
-          <span style="height: 350px;width: 120px;font-size: 70px;line-height: 88px;font-family:Big Shoulders Display, cursive ;text-transform: uppercase;font-weight: bold;"> Your Day at the Gallery </span>
-          <br />
-          Wander through our distinct collections and find new insights about
-          our artists. Dive into the details of their creative process.
-        </p>
-          <img src="./images/Rectangle (2).jpg" style="width: 635px;height: 400px;" />
+          <p class="mid-text">
+            <span
+              style="
+                height: 350px;
+                width: 120px;
+                font-size: 70px;
+                line-height: 88px;
+                font-family: Big Shoulders Display, cursive;
+                text-transform: uppercase;
+                font-weight: bold;
+              "
+            >
+              Your Day at the Gallery
+            </span>
+            <br />
+            Wander through our distinct collections and find new insights about
+            our artists. Dive into the details of their creative process.
+          </p>
+          <img
+            src="./images/Rectangle (2).jpg"
+            style="width: 635px; height: 400px"
+          />
+        </div>
+        <div class="grid">
+          <div>
+            <img
+              src="./assets/desktop/image-grid-2.jpg"
+              width="635px"
+              height="720px"
+            />
+          </div>
+          <div class="mid-bottom-left">
+            <div>
+              <img
+                src="./assets/desktop/image-grid-3.jpg"
+                width="445px"
+                height="313px"
+              />
+            </div>
+            <div class="last">
+              <p style="color: #ffffff">COME & BE INSPIRED</p>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="grid">
-        <div>
-      <img src="./assets/desktop/image-grid-2.jpg" width="635px" height="720px">
-</div>
-<div class="mid-bottom-left">
-<div>
-  <img src="./assets/desktop/image-grid-3.jpg" width="445px" height="313px">
-</div>
-<div class="last">
- <p style="color: #ffffff;">COME & BE INSPIRED</p>
-</div>
-</div>
     </div>
-    </div>
-    <div class="footers">
-      <footer style="display: flex; justify-content: space-around;" >
-        <p class="footer-text">
-          <span style="width: 430px;font-size: 70px;line-height: 70px;font-family:Big Shoulders Display, cursive ;text-transform: uppercase;font-weight: bold;"> Modern<br>art gallery </span>
-          <br />
-          Wander through our distinct collections and find new insights about
-          our artists. Dive into the details of their creative process.
-        </p>
-        <div>
-        <img src="./assets/icon-facebook.svg" width="20px" height="20px">
-        <img src="./assets/icon-facebook.svg"  width="20px" height="20px">
-        <img src="./assets/icon-facebook.svg"  width="20px" height="20px">
+    <footer>
+      <span
+      style="
+        width: 430px;
+        font-size: 70px;
+        line-height: 70px;
+        font-family: Big Shoulders Display, cursive;
+        text-transform: uppercase;
+        font-weight: bold;
+      "
+    >
+      Modern<br />art gallery
+    </span>
+      <p class="footer-text">
+      
+        <br />
+        Wander through our distinct collections and find new insights about
+        our artists. Dive into the details of their creative process.
+      </p>
+      <div>
+        <img src="./assets/icon-facebook.svg" width="20px" height="20px" />
+        <img src="./assets/icon-facebook.svg" width="20px" height="20px" />
+        <img src="./assets/icon-facebook.svg" width="20px" height="20px" />
       </div>
-      </footer>
-    </div>
-    </div>
+    </footer>
   </body>
 </html>
