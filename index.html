@@ -12,13 +12,10 @@
         margin: 0px;
         background-color: rgb(21, 21, 21);
         padding: 0px 5% 0px 5%;
-       
-        
       }
       .container {
         display: flex;
         width: 1275px;
-        /* height: 800px; */
         background-color: white;
       }
       .top-right {
@@ -123,18 +120,27 @@
         justify-content: center;
       }
       .footers{
-        /* width: 1140px; */
-        height: 84px;
-       
+        height: 84px; 
         height: 244px;
         background-color: #444444;
         margin-top: 10%;
-        /* justify-content: space-around; */
-        border: 1px solid red;
       }
       .footer-text{
       display: flex;
        
+      }
+      .btn {
+        width: 200px;
+        height: 72px;
+        background-color: #000;
+        position: relative;
+        color: white;
+      }
+      .btn-img {
+        background-color: #d5966c;
+        width: 60px;
+        height: 72px;
+        justify-content: center;
       }
     </style>
   </head>
@@ -158,10 +164,21 @@
             from a spark of inspiration. Will these pieces inspire you? Visit us
             and find out.
           </p>
-          <div style="width: 280px;">
-          <button type="button" style="width: 240px;
-          height: 72px; background-color: #D5966C;border: #D5966C;" >Our Location </button>
-          <img src="./assets/icon-arrow-right.svg" style="background-color: #000000; width: 20;height: 72px;">
+          <div style="display: flex;">
+            <button
+              type="button"
+              class="btn"
+              value="OUR Location"
+              style="font-size: 30px; font-family: Big Shoulders Display"
+            >
+              OUR LOCATION
+            </button>
+            <div class="btn-img">
+              <img
+                src="./assets/icon-arrow-right.svg"
+                style="width: 50px; height: 50px; margin-top: 8px"
+              />
+            </div>
         </div>
         </div>
       </div>
